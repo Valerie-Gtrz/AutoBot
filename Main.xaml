@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1315.33333333333,1188.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1336,2038.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="74">
+    <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -78,7 +78,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="594,1124" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="672.666666666667,1974" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="invoiceIdDueDate" />
     </Sequence.Variables>
@@ -87,54 +87,92 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Google" sap:VirtualizedContainerService.HintSize="552,1241.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d4233741-9fbb-4476-b3c5-6ec14409cab8" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Google" sap:VirtualizedContainerService.HintSize="630.666666666667,1882" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d4233741-9fbb-4476-b3c5-6ec14409cab8" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,1023.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596.666666666667,1664" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="ReadDataTable" sap:VirtualizedContainerService.HintSize="476,928.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="ReadDataTable" sap:VirtualizedContainerService.HintSize="554.666666666667,1569.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Sequence -Extract Table Data" sap:VirtualizedContainerService.HintSize="434,388" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Sequence -Extract Table Data" sap:VirtualizedContainerService.HintSize="512.666666666667,388" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[invoiceIdDueDate]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='#' ReferenceIdx='0' Name='#' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ID' ReferenceIdx='1' Name='invoiceID'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Due Date' ReferenceIdx='2' Name='Due Date'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Invoice' ReferenceIdx='3' Name='Invoice' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='#' attr='text' /&gt;&lt;column name='ID' attr='text' /&gt;&lt;column name='Due Date' attr='text' /&gt;&lt;column name='Invoice' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,158.666666666667" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" Version="V1">
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[invoiceIdDueDate]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='#' ReferenceIdx='0' Name='#' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ID' ReferenceIdx='1' Name='Invoice ID'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Due Date' ReferenceIdx='2' Name='Due Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='DateColumnFormat' Format='d-M-yyyy' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Invoice' ReferenceIdx='3' Name='Invoice' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='#' attr='text' /&gt;&lt;column name='ID' attr='text' /&gt;&lt;column name='Due Date' attr='text' /&gt;&lt;column name='Invoice' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,158.666666666667" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" Version="V1">
                   <uix:NExtractData.Target>
-                    <uix:TargetAnchorable DesignTimeRectangle="763, 417, 1563, 293" FriendlyName="'#IDDue DateInvoice'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="03cba528-8495-477f-ad3a-2a1cac2bf2c8" InformativeScreenshot="c075a7192c65fb84605eb6ace3646be7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" />
+                    <uix:TargetAnchorable DesignTimeRectangle="249, 417, 1563, 293" FriendlyName="'#IDDue DateInvoice'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="24e670d1-fdb8-45ee-8b4d-0894448ec899" InformativeScreenshot="c075a7192c65fb84605eb6ace3646be7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" />
                   </uix:NExtractData.Target>
                 </uix:NExtractData>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Data Table Extracted&quot;]" />
               </Sequence>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[invoiceIdDueDate]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,209.333333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[invoiceIdDueDate]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="512.666666666667,679.333333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="200,86" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Sequence - Download Invoice" sap:VirtualizedContainerService.HintSize="476,556" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="si:FileInfo" Name="invoiceDownload" />
+                      </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
+                      <ui:GetLastDownloadedFile Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="C:\Users\valerie.gutierrez\Downloads" File="[invoiceDownload]" sap:VirtualizedContainerService.HintSize="434,461.333333333333" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                        <ui:GetLastDownloadedFile.Body>
+                          <ActivityAction>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d4233741-9fbb-4476-b3c5-6ec14409cab8" Version="V1">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable Accuracy="0.98" BrowserURL="https://rpachallengeocr.azurewebsites.net/" DesignTimeRectangle="1642, 496, 21, 21" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl parentid='tableSandbox' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='tableSandbox' tag='SPAN' type='' aaname='' /&gt;" Guid="46d3b708-0b10-4c2a-9fd4-1af70ad19786" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEuSURBVEhL7ZQxS8NAGIb9T079Hf0PTvkDSgYHx+KQSZwciiBEBB0kpNkkiBQhBAdxaEFaOpxCOOS46fWuSaF399lei8HBDs8S3u97Qu697Ekp0Tb/UiJQXifYP7o3OM4ZkTXZQDJDfGoKNEE6I7ImO8lOso62JPwT7IM1jHDZcyUHt6OlDAP/cveslPAyR9daupIww93E3bPmcwmM0wwdaqFDgl5RETu8zqTCsO/+TmyCdErM1vgdvJgijujlmm7/FZyaa/CTaCYFgtAVdKJnjAWRX8KSMCTnajjMMTSe1/DCKsKJylVuTr49zXNBVtfbkizuAi0xiqCaFL8LIqNQL6NfYnGHNpRoKpQ3D7h4oZs0x08ywOHVI6JtORv4SH6Hv5Q07SIGtuGHdrWBxDfDsnkVM+maHQAAAABJRU5ErkJggg==" InformativeScreenshot="6fec82b4792be39890b15e9eff17d3ab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="1496, 480, 315, 57" FriendlyName="'TD'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='4' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAT8AAAA9CAYAAADbGW4UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJnSURBVHhe7duxahRBGMDxvEKexSrPkXewujpBucLCMlikEiuLIAgRQQsJyXUSRIIQgoVISEASUpzCcchx1XibZIPJDRHulh257/fBj1nYuS3/HMzuUprM8fHxJWOMWdSpG1ev4meMCTFT8VteXk7r6+tpbW0tVdcAi6jqXDU38av/9QEsumrqdWk8Ht/cqK4BFpH4ASGJHxCS+AEhiR8QkvgBIYkfEJL4ASGJHxCS+AEhiR8QkvgBIYkfEJL4ASGJHxCS+FHYKB292UkPHn+45cl+P7MXmiN+FHaRtp/dDl+ls3uR2QvNET8KEz/KED8KEz/KED8KEz/KED8KEz/KED8KEz/KED8KEz/KED/aN/yV+j/7107Sq43p+D18d/LXnn4a/s48B+YgfrRueLSfVu/E7l7dXnp/ln8WzEr8KGCUTnd7aSUXuik7aeNwkHkGzEf8KGSQDramP2u7q7N7nvktzE/8KGd0nrY389GrrG59S8Pc76AB4kdZZ4ep050O38rml3Q6yuyHhogfLeinnReTqHX300Hm/vDwzgHI08m+wfS+8ffPl/s6Pa/BMD/xowX1u3z5+N06AOn20vaPUWbPxCSSVRy9A0gTxI8W/Ct+lUE6evsxvfx6z8mu+NEg8aMFdfz20qPXn9LmrJ7viR+NET9akP+EbVbiRxPEjxaIH/8f8aMF16e9mZDNwmkvTRA/ICTxA0ISPyAk8QNCEj8gJPEDQhI/ICTxA0ISPyAk8QNCEj8gJPEDQhI/ICTxA0ISPyAk8QNCEj8gJPEDQhI/IKSp+NXhA1h01dSr+AFhVHO1pvQHidXY+X8zsKsAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:GetLastDownloadedFile.Body>
+                      </ui:GetLastDownloadedFile>
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEachRow.Body>
               </ui:ForEachRow>
-              <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[invoiceIdDueDate]" Delimitator="Comma" DisplayName="Write CSV - Write Table Data" FilePath="Invoice Data.csv" sap:VirtualizedContainerService.HintSize="434,156.666666666667" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="512.666666666667,327.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="476,248.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[invoiceIdDueDate]" Delimitator="Comma" DisplayName="Write CSV - Write Table Data" FilePath="Invoice Data.csv" sap:VirtualizedContainerService.HintSize="434,156.666666666667" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
             </Sequence>
           </Sequence>
         </ActivityAction>
